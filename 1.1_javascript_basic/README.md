@@ -8,4 +8,18 @@
 - ***1.1 JavaScript básica***
  + Tipos muito importantes que programas em JavaScript podem manipular são objetos e arrays, objetos mais ainda.
  + Frases em JavaScript são expressôes, então as sentenças completas são ***instruções***. As linhas que terminam com ponto e vírgula são instruções. Na verdade há muita sobreposição entre instruções e expressões. Em linhas gerais, uma expressão é algo que calcula o valor, mas não ***faz*** nada: ela não altera o estado do	programa de modo algum. As instruções, por outro lado, não têm um valor (ou não têm um valor com que nos preocupemos), mas alteram o estado.
- + Uma ***função*** é um bloco de código JavaScript nomeado e paremetrizado que você define uma vez e, então, pode chamar repetidamente (Prévia de funções).
+ + Uma ***função*** é um bloco de código JavaScript nomeado e paremetrizado que você define uma vez e, então, pode chamar repetidamente ***(prévia de funções)***.
+ ```javascript
+	// As funções são blocos de códigos JavaScript parametrizadas que podemos chamar.
+	function plus(x) {			// Define uma função chamada "plus", com o parâmetro "x"
+		return x + 1;			// Retorna um valor uma unidade maior do que o que foi passado
+	}							// As funções são incluídas entre chaves
+
+	plus(y)						// => 4: y é 3; portanto, essa chamada retorna 3 + 1
+
+	var square = function(x) {	// As funções são valores e podem ser atribuidos a variáveis
+		return x * x;			// Calcula o valor da função
+	};							// => 16: chama duas funções em uma única expressão
+
+	square(plus(y))
+ ```
