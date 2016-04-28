@@ -54,18 +54,15 @@
  ```javascript
 
 	// Define uma função construtora para inicializar um novo objeto Point
-
 	function Point(x, y) {		// Por convenção, as contrutoras começam com letra maiúsculas
 		this.x = x;				// A palavra chave this é o novo objeto que está sendo inicializado
 		this.y = y;				// Armazena os argumentos da função como propriedades do objeto
 	}							// Nem um return é necessário
 
 	// Usa uma função construtora com a palavra-chave "new" para criar instâncias
-	
 	var p = new Point(1, 1); 	// Atribuindo valores
 
 	// Define métodos para objetos Point atribuido-os ao objeto prototype associado à função contrutora.
-
 	Point.prototype.r = function() {
 		// Esse é o objeto Point na qual o método ... é chamado
 		return (this.x * this.x) + (this.y * this.y);
