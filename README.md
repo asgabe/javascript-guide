@@ -1,1 +1,1 @@
-# Javascript - The Definitive Guide :octocat:
+# Javascript - The Definitive Guide
